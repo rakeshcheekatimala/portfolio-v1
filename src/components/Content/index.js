@@ -7,8 +7,7 @@ const Content = () => {
       display={{ md: 'flex' }}
       justifyContent="center"
       alignItems="center"
-      px={4}
-      pt={4}
+      p={4}
       style={{ height: 'calc(100vh - 90px)' }}
     >
       <Box flexShrink="0">
