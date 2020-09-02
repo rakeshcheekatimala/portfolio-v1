@@ -1,3 +1,13 @@
+Features:
+
+- [x] Initial Skelton and Setup of React Application.
+- [x] React Integration with Chakra-UI.
+- [x] Initial Skelton for Components, folder structure of the App.
+- [x] DarkMode Implementation for the application
+
+Project Layout Inspiration:
+Thanks to https://brittanychiang.com/ , i have inspired some of the fonts & colors for my application from this design.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
