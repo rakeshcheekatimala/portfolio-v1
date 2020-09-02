@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Flex, Text, useColorMode, Icon, Avatar } from '@chakra-ui/core';
-import Content from './../Content';
+
 const MenuItems = ({ children }) => (
   <Text mt={{ base: 4, md: 0 }} mr={6} display="block">
     {children}
@@ -20,9 +20,7 @@ const Header = (props) => {
         align="center"
         justify="space-between"
         wrap="wrap"
-        padding="1.5rem"
-        bg="teal.500"
-        color="white"
+        padding="1rem"
         {...props}
       >
         <Flex align="center" mr={5}>
@@ -31,8 +29,8 @@ const Header = (props) => {
 
         <Box display={{ base: 'block', md: 'none' }} onClick={handleToggle}>
           <svg
-            fill="white"
-            width="12px"
+            fill={colorMode === 'light' ? '#000' : 'Aquamarine'}
+            width="15px"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -48,7 +46,6 @@ const Header = (props) => {
           flexGrow={1}
         >
           <MenuItems>About</MenuItems>
-
           <MenuItems>Projects</MenuItems>
         </Box>
 
@@ -64,7 +61,7 @@ const Header = (props) => {
           )}
         </Box>
       </Flex>
-      <Content />
+      <hr />
     </>
   );
 };
