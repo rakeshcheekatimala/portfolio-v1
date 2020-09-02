@@ -1,10 +1,26 @@
 import React from 'react';
-import { Box, Text, Stack, ListItem, List } from '@chakra-ui/core';
+import { Box, Text, ListItem, List, Button, Image } from '@chakra-ui/core';
 
 const Content = () => {
   return (
-    <Stack align="center" justify="center" p={8}>
-      <Box>
+    <Box
+      display={{ md: 'flex' }}
+      justifyContent="center"
+      alignItems="center"
+      px={4}
+      pt={4}
+      style={{ height: 'calc(100vh - 90px)' }}
+    >
+      <Box flexShrink="0">
+        <Image
+          rounded="lg"
+          width={{ md: 400 }}
+          src="https://avatars0.githubusercontent.com/u/9688329?s=460&u=30a3fb87fbe2cbdd1e5639205e730098f1e066fc&v=4"
+          alt="Rakesh Cheekatimala"
+        />
+      </Box>
+
+      <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
         <Text
           fontWeight="bold"
           fontFamily="Playball,cursive"
@@ -15,7 +31,7 @@ const Content = () => {
           RAKESH CHEEKATIMALA
         </Text>
         <Text mt={2}>
-          I'm Software engineer based in Singapore, specaializing in building,
+          I'm Software engineer based in Singapore, specializing in building,
           and solutiong frontend web applications and everything in between.
         </Text>
         <List spacing={4} mt={4}>
@@ -55,8 +71,20 @@ const Content = () => {
             How to reach me : rakeshcheekatimala@gmail.com
           </ListItem>
         </List>
+        <br />
+        <Button
+          as="a"
+          rightIcon="arrow-forward"
+          variant="outline"
+          size="lg"
+          border="1px"
+          height="60px"
+          href="mailto:rakeshcheekatimala@gmail.com"
+        >
+          Get In Touch
+        </Button>
       </Box>
-    </Stack>
+    </Box>
   );
 };
 
