@@ -8,7 +8,7 @@ const Content = () => {
       justifyContent="center"
       alignItems="center"
       p={4}
-      style={{ height: 'calc(100vh - 90px)' }}
+
     >
       <Box flexShrink="0">
         <Image
@@ -21,9 +21,9 @@ const Content = () => {
 
       <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
         <Text
-          fontWeight="bold"
+
           fontFamily="Playball,cursive"
-          fontSize="40px"
+          fontSize="32px"
           letterSpacing="wide"
           mt={3}
         >
